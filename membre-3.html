@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine Ngambe — Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; font-family: 'Segoe UI', system-ui, sans-serif; }
+        .glass-nav { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .profile-hero { padding: 120px 0 60px 0; background: radial-gradient(circle at top, rgba(16, 185, 129, 0.15), transparent); position: relative; }
+        .profile-photo-large { width: 130px; height: 130px; margin: 0 auto 20px; border-radius: 50%; padding: 4px; background: linear-gradient(135deg, #10b981, #34d399); box-shadow: 0 0 25px rgba(16, 185, 129, 0.4); }
+        .placeholder-img { width: 100%; height: 100%; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.8rem; color: white; }
+        .glass-card { background: rgba(30, 41, 59, 0.4); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; transition: transform 0.3s ease; }
+        .glass-card:hover { transform: translateY(-5px); }
+        .badge-skill { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.2); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; margin: 4px; display: inline-block; }
+        .skill-bar { height: 8px; background: rgba(255, 255, 255, 0.05); border-radius: 4px; overflow: hidden; }
+        .skill-progress { height: 100%; background: linear-gradient(90deg, #10b981, #34d399); border-radius: 4px; }
+        .timeline { border-left: 2px solid rgba(16, 185, 129, 0.3); padding-left: 20px; position: relative; }
+        .timeline-item { position: relative; margin-bottom: 25px; }
+        .timeline-item::before { content: ''; width: 12px; height: 12px; background: #10b981; border-radius: 50%; position: absolute; left: -27px; top: 6px; box-shadow: 0 0 10px #10b981; }
+        .social-icon { width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); border-radius: 50%; color: #94a3b8; margin: 0 5px; text-decoration: none; transition: all 0.3s; }
+        .social-icon:hover { background: #10b981; color: white; transform: scale(1.1); }
+        .btn-cv { background: linear-gradient(135deg, #10b981, #34d399); color: white; border: none; padding: 12px; border-radius: 10px; font-weight: bold; display: flex; align-items: center; text-decoration: none; transition: opacity 0.2s; }
+        .btn-cv:hover { opacity: 0.9; color: white; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="../index.html"><span style="color: #10b981;">◆</span> Portfolio Collectif</a>
+            <div class="ms-auto"><a class="btn btn-outline-light btn-sm px-3" href="../index.html"><i class="fa-solid fa-arrow-left me-2"></i>Accueil</a></div>
+        </div>
+    </nav>
+
+    <section class="profile-hero text-center">
+        <div class="container">
+            <div class="profile-photo-large">
+                <div class="placeholder-img" style="background: linear-gradient(135deg, #10b981, #34d399);">DMJN</div>
+            </div>
+            <h1 class="display-6 fw-bold mb-2">Divine M. J. Ngambe</h1>
+            <p class="lead text-primary mb-3 fw-semibold" style="color: #10b981 !important;">Licence Programmation · ESGAE</p>
+            <p class="text-secondary fst-italic max-width-600 mx-auto mb-4">"La technologie est l'outil, la créativité est la limite."</p>
+            <div class="mb-2">
+                <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:divinengambe@icloud.com" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-4">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="glass-card p-4 mb-4">
+                    <h5 class="fw-bold mb-3 text-white"><i class="fa-solid fa-id-card me-2" style="color: #10b981;"></i>📋 Informations</h5>
+                    <ul class="list-unstyled text-secondary mb-0">
+                        <li class="mb-2"><strong class="text-white">Née le :</strong> 16 Juin 2007</li>
+                        <li class="mb-2"><strong class="text-white">Téléphone :</strong> 06 51 01 15 7</li>
+                        <li class="mb-2"><strong class="text-white">Email :</strong> divinengambe@icloud.com</li>
+                        <li><strong class="text-white">Adresse :</strong> 14 rue Stama, Brazzaville</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card p-4 mb-4">
+                    <h5 class="fw-bold mb-3 text-white"><i class="fa-solid fa-star me-2" style="color: #10b981;"></i>⭐ Soft Skills</h5>
+                    <div class="d-flex flex-wrap">
+                        <span class="badge-skill">✓ Esprit d'équipe</span>
+                        <span class="badge-skill">✓ Organisation</span>
+                        <span class="badge-skill">✓ Bureautique Pro</span>
+                        <span class="badge-skill">✓ Curiosité</span>
+                    </div>
+                </div>
+
+                <a href="#" class="btn-cv justify-content-center"><i class="fa-solid fa-file-pdf me-2"></i> Télécharger mon CV</a>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="glass-card p-4 mb-4">
+                    <h5 class="fw-bold mb-3 text-white"><i class="fa-solid fa-user me-2" style="color: #10b981;"></i>📝 Présentation</h5>
+                    <p class="text-secondary mb-0">
+                        Étudiante en Licence de Programmation à l'ESGAE Brazzaville, je suis passionnée par l'informatique et les nouvelles technologies. Curieuse et motivée, je développe activement mes compétences logicielles, algorithmiques et managériales pour préparer une insertion d'excellence dans le secteur de l'ingénierie logicielle.
+                    </p>
+                </div>
+
+                <div class="glass-card p-4 mb-4">
+                    <h5 class="fw-bold mb-4 text-white"><i class="fa-solid fa-layer-group me-2" style="color: #10b981;"></i>🛠️ Compétences</h5>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between text-secondary small mb-1"><span>Microsoft Office (Word/PPT)</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%; background: linear-gradient(90deg, #10b981, #34d399);"></div></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between text-secondary small mb-1"><span>Informatique générale</span><span>80%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 80%; background: linear-gradient(90deg, #10b981, #34d399);"></div></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between text-secondary small mb-1"><span>Bases en Programmation</span><span>60%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 60%; background: linear-gradient(90deg, #10b981, #34d399);"></div></div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-4 mb-4">
+                    <h5 class="fw-bold mb-4 text-white"><i class="fa-solid fa-graduation-cap me-2" style="color: #10b981;"></i>🎓 Parcours Académique</h5>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="fw-bold text-white">2025 — Présent</div>
+                            <div class="small fw-semibold" style="color: #10b981;">Licence en Programmation</div>
+                            <p class="text-secondary small mb-0">ESGAE — Brazzaville, Congo</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="fw-bold text-white">Avant 2025</div>
+                            <div class="small fw-semibold" style="color: #10b981;">Baccalauréat Scientifique / Général</div>
+                            <p class="text-secondary small mb-0">Validation du cycle secondaire avec brio.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-4">
+                    <h5 class="fw-bold mb-3 text-white"><i class="fa-solid fa-folder-open me-2" style="color: #10b981;"></i>🚀 Projets & Travaux</h5>
+                    <div class="p-3" style="background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                        <h6 class="text-white fw-bold">Projets Algorithmiques Académiques</h6>
+                        <p class="text-secondary small mb-0">Conception de structures algorithmiques logiques et modélisation de bases de données dans le cadre des ateliers pratiques ESGAE.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4 text-secondary small mt-5" style="border-top: 1px solid rgba(255,255,255,0.05);">
+        <p class="mb-0">© 2026 Portfolio Collectif — ESGAE Brazzaville</p>
+    </footer>
+</body>
+</html>

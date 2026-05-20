@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jered Bounkouta — Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; font-family: 'Segoe UI', system-ui, sans-serif; }
+        .glass-nav { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .profile-hero { padding: 120px 0 60px 0; background: radial-gradient(circle at top, rgba(236, 72, 153, 0.15), transparent); position: relative; }
+        .profile-photo-large { width: 130px; height: 130px; margin: 0 auto 20px; border-radius: 50%; padding: 4px; background: linear-gradient(135deg, #ec4899, #f43f5e); box-shadow: 0 0 25px rgba(236, 72, 153, 0.4); }
+        .placeholder-img { width: 100%; height: 100%; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 2rem; color: white; }
+        .glass-card { background: rgba(30, 41, 59, 0.4); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; transition: transform 0.3s ease; }
+        .glass-card:hover { transform: translateY(-5px); }
+        .badge-skill { background: rgba(236, 72, 153, 0.15); color: #f472b6; border: 1px solid rgba(236, 72, 153, 0.2); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; margin: 4px; display: inline-block; }
+        .skill-bar { height: 8px; background: rgba(255, 255, 255, 0.05); border-radius: 4px; overflow: hidden; }
+        .skill-progress { height: 100%; background: linear-gradient(90deg, #ec4899, #f43f5e); border-radius: 4px; }
+        .timeline { border-left: 2px solid rgba(236, 72, 153, 0.3); padding-left: 20px; position: relative; }
+        .timeline-item { position: relative; margin-bottom: 25px; }
+        .timeline-item::before { content: ''; width: 12px; height: 12px; background: #ec4899; border-radius: 50%; position: absolute; left: -27px; top: 6px; box-shadow: 0 0 10px #ec4899; }
+        .social-icon { width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); border-radius: 50%; color: #94a3b8; margin: 0 5px; text-decoration: none; transition: all 0.3s; }
+        .social-icon:hover { background: #ec4899; color: white; transform: scale(1.1); }
+        .btn-cv { background: linear-gradient(135deg, #ec4899, #f43f5e); color: white; border: none; padding: 12px; border-radius: 10px; font-weight: bold; display: flex; align-items: center; text-decoration: none; transition: opacity 0.2s; }
+        .btn-cv:hover { opacity: 0.9; color: white; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="../index.html"><span class="text-pink" style="color: #ec4899;">◆</span> Portfolio Collectif</a>
+            <div class="ms-auto"><a class="btn btn-outline-light btn-sm px-3" href="../index.html"><i class="fa-solid fa-arrow-left me-2"></i>Accueil</a></div>
+        </div>
+    </nav>
+
+    <section class="profile-hero text-center">
+        <div class="container">
+            <div class="profile-photo-large">
+    <img src="assets/photo-jered.jpg" alt="Jered Bounkouta" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+</div>
+            <h1 class="display-6 fw-bold mb-2">Jered Bounkouta</h1>
+            <p class="lead text-primary mb-3 fw-semibold" style="color: #ec4899 !important;">Génie Logiciel · IA · Créateur Digital</p>
+            <p class="text-secondary fst-italic max-width-600 mx-auto mb-4">"L'intelligence artificielle a plus de valeur lorsqu'elle travaille avec l'humain."</p>
+            <div class="mb-2">
+                <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:jeredbounkouta@gmail.com" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-4">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="glass-card p-4 mb-4">
+                    <h5 class="fw-bold mb-3 text-white"><i class="fa-solid fa-id-card me-2" style="color: #ec4899;"></i>📋 Informations</h5>
+                    <ul class="list-unstyled text-secondary mb-0">
+                        <li class="mb-2"><strong class="text-white">Localisation :</strong> Brazzaville, Congo</li>
+                        <li class="mb-2"><strong class="text-white">Email :</strong> jeredbounkouta@gmail.com</li>
+                        <li class="mb-2"><strong class="text-white">Tél :</strong> 06 46 43 78 9</li>
+                        <li><strong class="text-white">Langues :</strong> Fr (courant), An (basique)</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card p-4 mb-4">
+                    <h5 class="fw-bold mb-3 text-white"><i class="fa-solid fa-star me-2" style="color: #ec4899;"></i>⭐ Qualités</h5>
+                    <div class="d-flex flex-wrap">
+                        <span class="badge-skill">✓ Créatif</span>
+                        <span class="badge-skill">✓ Autonome</span>
+                        <span class="badge-skill">✓ Curieux</span>
+                        <span class="badge-skill">✓ Ambitieux</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-4 mb-4">
+                    <h5 class="fw-bold mb-3 text-white"><i class="fa-solid fa-heart me-2" style="color: #e11d48;"></i>❤️ Passions</h5>
+                    <div class="d-flex flex-wrap">
+                        <span class="badge-skill">🤖 Intelligence Artificielle</span>
+                        <span class="badge-skill">💻 Dev Logiciel</span>
+                        <span class="badge-skill">🎵 Musique</span>
+                    </div>
+                </div>
+
+                <a href="#" class="btn-cv justify-content-center"><i class="fa-solid fa-file-pdf me-2"></i> Télécharger mon CV</a>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="glass-card p-4 mb-4">
+                    <h5 class="fw-bold mb-3 text-white"><i class="fa-solid fa-user me-2" style="color: #ec4899;"></i>📝 Profil</h5>
+                    <p class="text-secondary mb-0">
+                        Étudiant en première année de Génie Logiciel, passionné par l'intelligence artificielle, le développement numérique et la création de contenus digitaux. Je développe progressivement mes compétences en automatisation, design et entrepreneuriat digital. Je combine technologie, créativité et esprit entrepreneurial pour concevoir des projets innovants orientés vers les solutions numériques.
+                    </p>
+                </div>
+
+                <div class="glass-card p-4 mb-4">
+                    <h5 class="fw-bold mb-4 text-white"><i class="fa-solid fa-layer-group me-2" style="color: #ec4899;"></i>🛠️ Compétences</h5>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between text-secondary small mb-1"><span>Prompt Engineering</span><span>80%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 80%; background: linear-gradient(90deg, #ec4899, #f43f5e);"></div></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between text-secondary small mb-1"><span>IA Générative & Agents IA</span><span>75%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 75%; background: linear-gradient(90deg, #ec4899, #f43f5e);"></div></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between text-secondary small mb-1"><span>n8n Automatisation</span><span>70%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 70%; background: linear-gradient(90deg, #ec4899, #f43f5e);"></div></div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-4 mb-4">
+                    <h5 class="fw-bold mb-4 text-white"><i class="fa-solid fa-graduation-cap me-2" style="color: #ec4899;"></i>🎓 Formation</h5>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="fw-bold text-white">2025 — Présent</div>
+                            <div class="small fw-semibold" style="color: #ec4899;">Licence 1 en Génie Logiciel</div>
+                            <p class="text-secondary small mb-0">ESGAE Brazzaville — Congo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-4 mb-4">
+                    <h5 class="fw-bold mb-3 text-white"><i class="fa-solid fa-rocket me-2" style="color: #ec4899;"></i>🚀 Projets Étoiles</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-3 h-100" style="background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                                <h6 class="text-white fw-bold">Formation Agent IA</h6>
+                                <p class="text-secondary small mb-0">Création d'agents intelligents autonomes pour booster la productivité en entreprise.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 h-100" style="background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                                <h6 class="text-white fw-bold">NelyGoods</h6>
+                                <p class="text-secondary small mb-0">Plateforme expérimentale e-commerce orientée sur la commercialisation de produits digitaux.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-4">
+                    <h5 class="fw-bold mb-2 text-white"><i class="fa-solid fa-bullseye me-2" style="color: #ec4899;"></i>🎯 Objectif professionnel</h5>
+                    <p class="text-secondary mb-0">Devenir entrepreneur de référence dans la Tech et l'IA en Afrique, en développant des infrastructures numériques à fort impact de productivité.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4 text-secondary small mt-5" style="border-top: 1px solid rgba(255,255,255,0.05);">
+        <p class="mb-0">© 2026 Portfolio Collectif — ESGAE Brazzaville</p>
+    </footer>
+</body>
+</html>

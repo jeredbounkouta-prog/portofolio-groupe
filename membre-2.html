@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dieuchris Loubota Malonda — Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; font-family: 'Segoe UI', system-ui, sans-serif; }
+        .glass-nav { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .profile-hero { padding: 120px 0 60px 0; background: radial-gradient(circle at top, rgba(99, 102, 241, 0.15), transparent); position: relative; }
+        .profile-photo-large { width: 130px; height: 130px; margin: 0 auto 20px; border-radius: 50%; padding: 4px; background: linear-gradient(135deg, #6366f1, #8b5cf6); box-shadow: 0 0 25px rgba(99, 102, 241, 0.4); }
+        .placeholder-img { width: 100%; height: 100%; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 2rem; color: white; }
+        .glass-card { background: rgba(30, 41, 59, 0.4); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; transition: transform 0.3s ease; }
+        .glass-card:hover { transform: translateY(-5px); }
+        .badge-skill { background: rgba(99, 102, 241, 0.15); color: #818cf8; border: 1px solid rgba(99, 102, 241, 0.2); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; margin: 4px; display: inline-block; }
+        .skill-bar { height: 8px; background: rgba(255, 255, 255, 0.05); border-radius: 4px; overflow: hidden; }
+        .skill-progress { height: 100%; background: linear-gradient(90deg, #6366f1, #8b5cf6); border-radius: 4px; }
+        .timeline { border-left: 2px solid rgba(99, 102, 241, 0.3); padding-left: 20px; position: relative; }
+        .timeline-item { position: relative; margin-bottom: 25px; }
+        .timeline-item::before { content: ''; width: 12px; height: 12px; background: #6366f1; border-radius: 50%; position: absolute; left: -27px; top: 6px; box-shadow: 0 0 10px #6366f1; }
+        .social-icon { width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); border-radius: 50%; color: #94a3b8; margin: 0 5px; text-decoration: none; transition: all 0.3s; }
+        .social-icon:hover { background: #6366f1; color: white; transform: scale(1.1); }
+        .btn-cv { background: linear-gradient(135deg, #6366f1, #8b5cf6); color: white; border: none; padding: 12px; border-radius: 10px; font-weight: bold; display: flex; align-items: center; text-decoration: none; transition: opacity 0.2s; }
+        .btn-cv:hover { opacity: 0.9; color: white; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="../index.html"><span class="text-primary">◆</span> Portfolio Collectif</a>
+            <div class="ms-auto"><a class="btn btn-outline-light btn-sm px-3" href="../index.html"><i class="fa-solid fa-arrow-left me-2"></i>Accueil</a></div>
+        </div>
+    </nav>
+
+    <section class="profile-hero text-center">
+        <div class="container">
+            <div class="profile-photo-large">
+                <div class="placeholder-img" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">DLM</div>
+            </div>
+            <h1 class="display-6 fw-bold mb-2">Dieuchris Loubota Malonda</h1>
+            <p class="lead text-primary mb-3 fw-semibold">Développeur Python · Applications Web · Data</p>
+            <p class="text-secondary fst-italic max-width-600 mx-auto mb-4">"Transformer les données en décisions, ligne de code par ligne de code."</p>
+            <div class="mb-2">
+                <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:#" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-4">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="glass-card p-4 mb-4">
+                    <h5 class="fw-bold mb-3 text-white"><i class="fa-solid fa-id-card text-primary me-2"></i>📋 Informations</h5>
+                    <ul class="list-unstyled text-secondary mb-0">
+                        <li class="mb-2"><strong class="text-white">Né le :</strong> 23 Août 2007</li>
+                        <li class="mb-2"><strong class="text-white">Lieu :</strong> Brazzaville, Congo</li>
+                        <li class="mb-2"><strong class="text-white">Adresse :</strong> 47 rue Kongo, Ouenzé</li>
+                        <li><strong class="text-white">Langue :</strong> Français (courant)</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card p-4 mb-4">
+                    <h5 class="fw-bold mb-3 text-white"><i class="fa-solid fa-heart text-danger me-2"></i>❤️ Passions</h5>
+                    <div class="d-flex flex-wrap">
+                        <span class="badge-skill">🏀 Basketball</span>
+                        <span class="badge-skill">📚 Manga & WEBTOON</span>
+                        <span class="badge-skill">🎮 Jeux vidéo</span>
+                        <span class="badge-skill">💻 Code Python</span>
+                    </div>
+                </div>
+
+                <a href="#" class="btn-cv justify-content-center"><i class="fa-solid fa-file-pdf me-2"></i> Télécharger mon CV</a>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="glass-card p-4 mb-4">
+                    <h5 class="fw-bold mb-3 text-white"><i class="fa-solid fa-user text-primary me-2"></i>📝 Biographie</h5>
+                    <p class="text-secondary mb-0">
+                        Passionné par la programmation et l'analyse de données, je me suis formé de manière autonome au développement Python et à la création d'applications web avec Streamlit. J'aime résoudre des problèmes concrets grâce au code et explorer les possibilités offertes par l'intelligence artificielle et les outils numériques modernes.
+                    </p>
+                </div>
+
+                <div class="glass-card p-4 mb-4">
+                    <h5 class="fw-bold mb-4 text-white"><i class="fa-solid fa-layer-group text-primary me-2"></i>🛠️ Compétences</h5>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between text-secondary small mb-1"><span>Python</span><span>85%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between text-secondary small mb-1"><span>Streamlit</span><span>80%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between text-secondary small mb-1"><span>Analyse de données</span><span>75%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-4 mb-4">
+                    <h5 class="fw-bold mb-4 text-white"><i class="fa-solid fa-graduation-cap text-primary me-2"></i>🎓 Parcours Académique</h5>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="fw-bold text-white">2025 — Présent</div>
+                            <div class="text-primary small fw-semibold">Formation personnelle & Apprentissage autonome</div>
+                            <p class="text-secondary small mb-0">Développement Python, création d'applications Streamlit, utilisation de GitHub et VS Code.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-4">
+                    <h5 class="fw-bold mb-3 text-white"><i class="fa-solid fa-rocket text-primary me-2"></i>🚀 Projets Clés</h5>
+                    <div class="p-3 style-project-box" style="background: rgba(255,255,255,0.02); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                        <h6 class="text-white fw-bold">Salle Analytique Simple</h6>
+                        <p class="text-secondary small">Projet d'analyse de données de vente réalisé avec Python et Streamlit. Visualisation interactive et tableau de bord de suivi.</p>
+                        <span class="badge-skill">Python</span><span class="badge-skill">Streamlit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4 text-secondary small mt-5" style="border-top: 1px solid rgba(255,255,255,0.05);">
+        <p class="mb-0">© 2026 Portfolio Collectif — ESGAE Brazzaville</p>
+    </footer>
+</body>
+</html>
